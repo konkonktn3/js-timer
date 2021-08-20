@@ -39,7 +39,8 @@ start.addEventListener('click', function(){
 　　　null以外（スタート済み）なら帰る*/
      if(intervalId !== null){ return;}
 
-     let pre = new Date();//setIntervalが読まれた時の一個前の時間がpre
+     //setIntervalが読まれた時の一個前の時間がpre
+     let pre = new Date();
      
      intervalId = setInterval(function(){
           const now = new Date();//nowはfanction内のローカル変数
