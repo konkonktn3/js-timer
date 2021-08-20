@@ -24,6 +24,7 @@ function updateTime(){
      //時(整数・切り捨て)　分を60で割ると時　時/分/秒の時にするために24で割った余り
      const h = Math.floor(elapsed / (1000*60*60)) % 24;
 
+     //文字列に変え、初めの一桁のみ表示に
      const msStr = ms.toString().slice(0,1)
      const sStr = s.toString().slice(0,1)
      const mStr = m.toString().slice(0,1)
