@@ -36,7 +36,7 @@ function updateTime(){
 start.addEventListener('click', function(){
      /*スタートを複数回押すと何回もセットインタバルに関数が入るけど
      ストップで止めれるのは最後だけで他タイマーが動いてしまうので、
-　　　null以外（スタート済み）なら帰る*/
+　　　null以外（スタート済み）なら返る*/
      if(intervalId !== null){ return;}
 
      //setIntervalが読まれた時の一個前の時間がpre
